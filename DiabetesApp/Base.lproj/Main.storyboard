@@ -78,7 +78,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-Iw-aTj">
                                 <rect key="frame" x="5" y="93" width="199.5" height="251.5"/>
-                                <color key="backgroundColor" red="0.13480953795045703" green="0.83116310829999995" blue="0.32534195845273545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
