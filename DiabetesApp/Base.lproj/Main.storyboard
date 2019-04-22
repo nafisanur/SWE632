@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oGh-dq-pe4">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiabetesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="ctl-xd-ZO2">
+                                <rect key="frame" x="77" y="298" width="260" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrg-o1-HKW">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="70"/>
+                                        <color key="backgroundColor" red="0.28421075084744862" green="0.83116310834884644" blue="0.13147410623156242" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="XtF-gR-Yjm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                        <state key="normal" title="PARENT">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsk-vk-hIY">
+                                        <rect key="frame" x="0.0" y="230" width="260" height="70"/>
+                                        <color key="backgroundColor" red="0.83116310834884644" green="0.42382671778331066" blue="0.82889487399298933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="JsU-yO-lWw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                        <state key="normal" title="CHILD">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="PQf-qa-4bh" kind="show" id="eq5-cc-Wg6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="WcJ-6f-dz5"/>
+                                    <constraint firstAttribute="width" constant="260" id="pGG-5p-baO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ctl-xd-ZO2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GmY-1Q-TQh"/>
+                            <constraint firstItem="ctl-xd-ZO2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQ0-QM-3Pr"/>
+                            <constraint firstItem="ctl-xd-ZO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u1Q-Cs-WLd"/>
+                            <constraint firstItem="ctl-xd-ZO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wZE-5g-aKY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V0b-TO-23z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="urP-3w-xo2">
+            <objects>
+                <viewController id="PQf-qa-4bh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RN4-eY-wfY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-Iw-aTj">
+                                <rect key="frame" x="5" y="93" width="199.5" height="251.5"/>
+                                <color key="backgroundColor" red="0.13480953795045703" green="0.83116310829999995" blue="0.32534195845273545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                <state key="normal" title="ACTIVITY" image="running"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p26-91-c4I">
+                                <rect key="frame" x="209.5" y="93" width="199.5" height="251.5"/>
+                                <color key="backgroundColor" red="0.83116310829999995" green="0.24955403560971062" blue="0.37793213930837916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                <state key="normal" title="GLUCOSE" image="sugar-blood-level">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Acj-aW-FYS" kind="show" id="Ogh-PK-W5v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALY-2J-cie">
+                                <rect key="frame" x="5" y="349.5" width="199.5" height="251"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                <state key="normal" title="MEDICINE" image="pills"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6El-bQ-WwQ">
+                                <rect key="frame" x="209.5" y="349.5" width="199.5" height="251"/>
+                                <color key="backgroundColor" red="0.42829651970910765" green="0.35669077843178038" blue="0.47173935174942017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                <state key="normal" title="FOOD" image="cutlery"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="252" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0c-3N-5e6">
+                                <rect key="frame" x="5" y="605.5" width="199.5" height="251.5"/>
+                                <color key="backgroundColor" red="0.47173935174942017" green="0.29219063813276969" blue="0.087901882968672962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                <state key="normal" title="FRIENDS" image="friendship"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYX-c5-8zH">
+                                <rect key="frame" x="209.5" y="605.5" width="199.5" height="251.5"/>
+                                <color key="backgroundColor" red="0.47173935174942017" green="0.14784916070647403" blue="0.33265176456783491" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                <state key="normal" title="SCORE" image="star"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p26-91-c4I" firstAttribute="top" secondItem="OoW-bz-0tq" secondAttribute="top" constant="5" id="09B-ed-aEH"/>
+                            <constraint firstItem="6El-bQ-WwQ" firstAttribute="height" secondItem="p26-91-c4I" secondAttribute="height" id="45o-K6-Tqu"/>
+                            <constraint firstItem="ALY-2J-cie" firstAttribute="leading" secondItem="OoW-bz-0tq" secondAttribute="leading" constant="5" id="4vC-fN-b8F"/>
+                            <constraint firstItem="Z1g-Iw-aTj" firstAttribute="width" secondItem="p26-91-c4I" secondAttribute="width" id="53n-Q0-N00"/>
+                            <constraint firstItem="F0c-3N-5e6" firstAttribute="leading" secondItem="OoW-bz-0tq" secondAttribute="leading" constant="5" id="5Qx-wp-0t9"/>
+                            <constraint firstItem="OoW-bz-0tq" firstAttribute="trailing" secondItem="p26-91-c4I" secondAttribute="trailing" constant="5" id="7c1-MX-aSO"/>
+                            <constraint firstItem="Z1g-Iw-aTj" firstAttribute="height" secondItem="ALY-2J-cie" secondAttribute="height" id="F7h-Wj-JUA"/>
+                            <constraint firstItem="F0c-3N-5e6" firstAttribute="width" secondItem="tYX-c5-8zH" secondAttribute="width" id="F7k-dn-jBJ"/>
+                            <constraint firstItem="ALY-2J-cie" firstAttribute="height" secondItem="F0c-3N-5e6" secondAttribute="height" id="Hjm-KL-l9l"/>
+                            <constraint firstItem="ALY-2J-cie" firstAttribute="top" secondItem="Z1g-Iw-aTj" secondAttribute="bottom" constant="5" id="InY-d6-DKe"/>
+                            <constraint firstItem="Z1g-Iw-aTj" firstAttribute="leading" secondItem="OoW-bz-0tq" secondAttribute="leading" constant="5" id="KJm-P4-2Gk"/>
+                            <constraint firstItem="6El-bQ-WwQ" firstAttribute="top" secondItem="p26-91-c4I" secondAttribute="bottom" constant="5" id="OwP-Ac-L9B"/>
+                            <constraint firstItem="tYX-c5-8zH" firstAttribute="top" secondItem="6El-bQ-WwQ" secondAttribute="bottom" constant="5" id="Pmd-fw-Szb"/>
+                            <constraint firstItem="ALY-2J-cie" firstAttribute="width" secondItem="6El-bQ-WwQ" secondAttribute="width" id="QeT-x9-SNt"/>
+                            <constraint firstItem="tYX-c5-8zH" firstAttribute="height" secondItem="6El-bQ-WwQ" secondAttribute="height" id="VEc-b0-aKq"/>
+                            <constraint firstItem="OoW-bz-0tq" firstAttribute="trailing" secondItem="tYX-c5-8zH" secondAttribute="trailing" constant="5" id="XLe-1v-4hh"/>
+                            <constraint firstItem="OoW-bz-0tq" firstAttribute="bottom" secondItem="F0c-3N-5e6" secondAttribute="bottom" constant="5" id="b06-wZ-6wd"/>
+                            <constraint firstItem="6El-bQ-WwQ" firstAttribute="leading" secondItem="ALY-2J-cie" secondAttribute="trailing" constant="5" id="bSo-o3-mdv"/>
+                            <constraint firstItem="Z1g-Iw-aTj" firstAttribute="top" secondItem="OoW-bz-0tq" secondAttribute="top" constant="5" id="eep-aa-UJO"/>
+                            <constraint firstItem="p26-91-c4I" firstAttribute="leading" secondItem="Z1g-Iw-aTj" secondAttribute="trailing" constant="5" id="hnG-19-GhX"/>
+                            <constraint firstItem="F0c-3N-5e6" firstAttribute="top" secondItem="ALY-2J-cie" secondAttribute="bottom" constant="5" id="jca-SJ-iOh"/>
+                            <constraint firstItem="tYX-c5-8zH" firstAttribute="leading" secondItem="F0c-3N-5e6" secondAttribute="trailing" constant="5" id="kj4-vr-IQq"/>
+                            <constraint firstItem="OoW-bz-0tq" firstAttribute="trailing" secondItem="6El-bQ-WwQ" secondAttribute="trailing" constant="5" id="o81-3T-DdK"/>
+                            <constraint firstItem="OoW-bz-0tq" firstAttribute="bottom" secondItem="tYX-c5-8zH" secondAttribute="bottom" constant="5" id="x1A-Hf-Czv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OoW-bz-0tq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTI-eC-ufx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.8550724637682" y="31.473214285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zjw-fo-ByT">
+            <objects>
+                <viewController id="Acj-aW-FYS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G4i-Vk-tAU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ube-oM-Nfy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ls-C7-FGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2659" y="126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6GF-PS-Ee2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oGh-dq-pe4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NwO-en-VhJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SMS-r2-wQt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cae-33-dK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="757.36607142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cutlery" width="512" height="512"/>
+        <image name="friendship" width="512" height="512"/>
+        <image name="pills" width="512" height="512"/>
+        <image name="running" width="512" height="512"/>
+        <image name="star" width="512" height="512"/>
+        <image name="sugar-blood-level" width="512" height="512"/>
+    </resources>
+</document>
