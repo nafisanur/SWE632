@@ -78,12 +78,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-Iw-aTj">
                                 <rect key="frame" x="5" y="93" width="199.5" height="251.5"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="backgroundColor" red="0.28047017909999999" green="1" blue="0.16926143669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
                                 <state key="normal" title="ACTIVITY" image="running"/>
+                                <connections>
+                                    <segue destination="Acj-aW-FYS" kind="show" id="Ka8-lA-aDn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p26-91-c4I">
                                 <rect key="frame" x="209.5" y="93" width="199.5" height="251.5"/>
@@ -95,9 +98,6 @@
                                 <state key="normal" title="GLUCOSE" image="sugar-blood-level">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Acj-aW-FYS" kind="show" id="Ogh-PK-W5v"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALY-2J-cie">
                                 <rect key="frame" x="5" y="349.5" width="199.5" height="251"/>
@@ -177,13 +177,79 @@
                     <view key="view" contentMode="scaleToFill" id="G4i-Vk-tAU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJg-9f-cQb">
+                                <rect key="frame" x="5" y="207" width="106" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="B6a-Bi-7s8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D75-Dv-xC8">
+                                <rect key="frame" x="5" y="399" width="124" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="RuR-Pn-h8o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8pT-RP-FP0">
+                                <rect key="frame" x="175" y="407" width="147" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Activity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bxg-5u-CtQ">
+                                <rect key="frame" x="145" y="215" width="187" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVITY LOG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLa-lE-FBb">
+                                <rect key="frame" x="93" y="88" width="228" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cua-yr-AFo">
+                                <rect key="frame" x="157" y="546" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.11180592032381317" green="0.6645185596446701" blue="0.032205481682899773" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Bxb-8a-gQo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="LOG!">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83116310829999995" green="0.51482453910349468" blue="0.28649010778828771" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="LJg-9f-cQb" firstAttribute="leading" secondItem="ube-oM-Nfy" secondAttribute="leading" constant="5" id="8tl-qp-YiC"/>
+                            <constraint firstItem="ube-oM-Nfy" firstAttribute="bottom" secondItem="D75-Dv-xC8" secondAttribute="bottom" constant="417" id="AU3-QH-yX3"/>
+                            <constraint firstItem="ube-oM-Nfy" firstAttribute="bottom" secondItem="cua-yr-AFo" secondAttribute="bottom" constant="99" id="JoY-uG-EXZ"/>
+                            <constraint firstItem="D75-Dv-xC8" firstAttribute="leading" secondItem="ube-oM-Nfy" secondAttribute="leading" constant="5" id="PrD-bY-ehe"/>
+                            <constraint firstItem="8pT-RP-FP0" firstAttribute="leading" secondItem="D75-Dv-xC8" secondAttribute="trailing" constant="15" id="QMk-6v-12W"/>
+                            <constraint firstItem="D75-Dv-xC8" firstAttribute="centerY" secondItem="8pT-RP-FP0" secondAttribute="centerY" id="QcM-Pa-YsU"/>
+                            <constraint firstItem="gLa-lE-FBb" firstAttribute="centerX" secondItem="cua-yr-AFo" secondAttribute="centerX" id="W4E-dj-a9m"/>
+                            <constraint firstItem="cua-yr-AFo" firstAttribute="leading" secondItem="ube-oM-Nfy" secondAttribute="leading" constant="157" id="X8a-p6-zpn"/>
+                            <constraint firstItem="LJg-9f-cQb" firstAttribute="centerY" secondItem="bxg-5u-CtQ" secondAttribute="centerY" id="Zem-iZ-1dB"/>
+                            <constraint firstItem="LJg-9f-cQb" firstAttribute="top" secondItem="gLa-lE-FBb" secondAttribute="bottom" constant="83" id="aU1-Qp-eMj"/>
+                            <constraint firstItem="LJg-9f-cQb" firstAttribute="top" secondItem="G4i-Vk-tAU" secondAttribute="top" constant="207" id="bV1-nE-sFu"/>
+                            <constraint firstItem="gLa-lE-FBb" firstAttribute="trailing" secondItem="8pT-RP-FP0" secondAttribute="trailing" id="l3b-7x-IDU"/>
+                            <constraint firstItem="gLa-lE-FBb" firstAttribute="leading" secondItem="ube-oM-Nfy" secondAttribute="leading" constant="93" id="n2f-8T-cZp"/>
+                            <constraint firstItem="gLa-lE-FBb" firstAttribute="centerX" secondItem="G4i-Vk-tAU" secondAttribute="centerX" id="qpi-dJ-rfV"/>
+                            <constraint firstItem="bxg-5u-CtQ" firstAttribute="leading" secondItem="LJg-9f-cQb" secondAttribute="trailing" constant="15" id="xZw-Zp-Pbn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ube-oM-Nfy"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ls-C7-FGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2659" y="126"/>
+            <point key="canvasLocation" x="2642.0289855072465" y="30.803571428571427"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6GF-PS-Ee2">
