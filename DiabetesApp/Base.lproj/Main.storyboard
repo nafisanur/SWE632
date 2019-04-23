@@ -18,47 +18,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="ctl-xd-ZO2">
-                                <rect key="frame" x="77" y="298" width="260" height="300"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrg-o1-HKW">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="70"/>
-                                        <color key="backgroundColor" red="0.28421075084744862" green="0.83116310834884644" blue="0.13147410623156242" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="XtF-gR-Yjm"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
-                                        <state key="normal" title="PARENT">
-                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsk-vk-hIY">
-                                        <rect key="frame" x="0.0" y="230" width="260" height="70"/>
-                                        <color key="backgroundColor" red="0.83116310834884644" green="0.42382671778331066" blue="0.82889487399298933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="JsU-yO-lWw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
-                                        <state key="normal" title="CHILD">
-                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="PQf-qa-4bh" kind="show" id="eq5-cc-Wg6"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsk-vk-hIY">
+                                <rect key="frame" x="0.0" y="730" width="414" height="132"/>
+                                <color key="backgroundColor" red="0.2985242591404984" green="0.7026336032727043" blue="0.5247250959913965" alpha="0.81525577910958902" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="WcJ-6f-dz5"/>
-                                    <constraint firstAttribute="width" constant="260" id="pGG-5p-baO"/>
+                                    <constraint firstAttribute="height" constant="132" id="kbW-TI-eHA"/>
                                 </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                <state key="normal" title="CHILD">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PQf-qa-4bh" kind="show" id="eq5-cc-Wg6"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7d-f2-Ug0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="510"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="Gn3-VH-2Ft">
+                                        <rect key="frame" x="159" y="196" width="80" height="118"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otr-tt-YmF">
+                                        <rect key="frame" x="105" y="341" width="204" height="42"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78576616007563438" green="0.081504737718455109" blue="0.33960675335846519" alpha="0.63915346746575341" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Otr-tt-YmF" secondAttribute="bottom" constant="127" id="5ii-Y6-NuP"/>
+                                    <constraint firstItem="Gn3-VH-2Ft" firstAttribute="leading" secondItem="i7d-f2-Ug0" secondAttribute="leading" constant="159" id="Muz-kk-oMk"/>
+                                    <constraint firstItem="Gn3-VH-2Ft" firstAttribute="centerY" secondItem="i7d-f2-Ug0" secondAttribute="centerY" id="NTW-XN-avv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Otr-tt-YmF" secondAttribute="trailing" constant="105" id="T74-WI-6Ui"/>
+                                    <constraint firstItem="Gn3-VH-2Ft" firstAttribute="top" secondItem="i7d-f2-Ug0" secondAttribute="top" constant="196" id="UlV-bf-je9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gn3-VH-2Ft" secondAttribute="trailing" constant="175" id="XL5-s7-ihO"/>
+                                    <constraint firstItem="Otr-tt-YmF" firstAttribute="top" secondItem="Gn3-VH-2Ft" secondAttribute="bottom" constant="27" id="Zn0-EQ-Jle"/>
+                                    <constraint firstItem="Otr-tt-YmF" firstAttribute="leading" secondItem="i7d-f2-Ug0" secondAttribute="leading" constant="105" id="oIY-to-5It"/>
+                                    <constraint firstItem="Otr-tt-YmF" firstAttribute="top" secondItem="Gn3-VH-2Ft" secondAttribute="bottom" constant="27" id="p4e-RO-TjU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrg-o1-HKW">
+                                <rect key="frame" x="0.0" y="598" width="414" height="132"/>
+                                <color key="backgroundColor" red="0.29167615893372784" green="0.72622973271432867" blue="0.14939023162625256" alpha="0.80399186643835618" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                <state key="normal" title="PARENT">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ctl-xd-ZO2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GmY-1Q-TQh"/>
-                            <constraint firstItem="ctl-xd-ZO2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQ0-QM-3Pr"/>
-                            <constraint firstItem="ctl-xd-ZO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u1Q-Cs-WLd"/>
-                            <constraint firstItem="ctl-xd-ZO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wZE-5g-aKY"/>
+                            <constraint firstItem="Rsk-vk-hIY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="87V-Km-JEe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vrg-o1-HKW" secondAttribute="trailing" id="8jd-jd-NRa"/>
+                            <constraint firstItem="Vrg-o1-HKW" firstAttribute="top" secondItem="i7d-f2-Ug0" secondAttribute="bottom" id="AqY-fP-pPk"/>
+                            <constraint firstItem="i7d-f2-Ug0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G6P-jI-TSd"/>
+                            <constraint firstItem="Rsk-vk-hIY" firstAttribute="trailing" secondItem="Vrg-o1-HKW" secondAttribute="trailing" id="M4t-3l-p7P"/>
+                            <constraint firstItem="Vrg-o1-HKW" firstAttribute="height" secondItem="Rsk-vk-hIY" secondAttribute="height" id="bN6-aF-cTa"/>
+                            <constraint firstItem="Rsk-vk-hIY" firstAttribute="top" secondItem="Vrg-o1-HKW" secondAttribute="bottom" id="bmG-15-Pq3"/>
+                            <constraint firstItem="i7d-f2-Ug0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eHZ-qJ-TUZ"/>
+                            <constraint firstItem="Vrg-o1-HKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="frR-jH-U0i"/>
+                            <constraint firstItem="i7d-f2-Ug0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mUU-X4-RHQ"/>
+                            <constraint firstItem="Rsk-vk-hIY" firstAttribute="leading" secondItem="Vrg-o1-HKW" secondAttribute="leading" id="pTN-3U-ugY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -78,7 +99,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-Iw-aTj">
                                 <rect key="frame" x="5" y="93" width="199.5" height="251.5"/>
-                                <color key="backgroundColor" red="0.28047017909999999" green="1" blue="0.16926143669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.09158316526348538" green="0.56783391497461921" blue="0.0092214407647447285" alpha="0.78138377568493156" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
@@ -90,7 +111,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p26-91-c4I">
                                 <rect key="frame" x="209.5" y="93" width="199.5" height="251.5"/>
-                                <color key="backgroundColor" red="0.83116310829999995" green="0.24955403560971062" blue="0.37793213930837916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.095265719154529971" green="0.71641453596497451" blue="0.39696369277647631" alpha="0.85929473458904104" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
@@ -101,7 +122,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALY-2J-cie">
                                 <rect key="frame" x="5" y="349.5" width="199.5" height="251"/>
-                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.32203001775810247" green="0.58494940165445286" blue="0.60538106823935722" alpha="0.79947024828767121" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
@@ -110,7 +131,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6El-bQ-WwQ">
                                 <rect key="frame" x="209.5" y="349.5" width="199.5" height="251"/>
-                                <color key="backgroundColor" red="0.42829651970910765" green="0.35669077843178038" blue="0.47173935174942017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.0" green="0.023434330555548992" blue="0.76941227791878175" alpha="0.79387842465753422" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
@@ -119,7 +140,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="252" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0c-3N-5e6">
                                 <rect key="frame" x="5" y="605.5" width="199.5" height="251.5"/>
-                                <color key="backgroundColor" red="0.47173935174942017" green="0.29219063813276969" blue="0.087901882968672962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.63873649641947094" green="0.34255729891483422" blue="0.40894396580745568" alpha="0.80169092465753422" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
@@ -128,7 +149,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYX-c5-8zH">
                                 <rect key="frame" x="209.5" y="605.5" width="199.5" height="251.5"/>
-                                <color key="backgroundColor" red="0.47173935174942017" green="0.14784916070647403" blue="0.33265176456783491" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.5" green="0.10304005278837886" blue="0.3224848967750587" alpha="0.79735659246575341" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="180" maxX="120" maxY="0.0"/>
@@ -277,5 +298,6 @@
         <image name="running" width="512" height="512"/>
         <image name="star" width="512" height="512"/>
         <image name="sugar-blood-level" width="512" height="512"/>
+        <image name="users" width="512" height="512"/>
     </resources>
 </document>
