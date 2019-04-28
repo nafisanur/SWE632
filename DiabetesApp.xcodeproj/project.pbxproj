@@ -14,6 +14,7 @@
 		0F5471BC226E1A9B00F2B97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5471BA226E1A9B00F2B97B /* LaunchScreen.storyboard */; };
 		0F5471C7226E1A9B00F2B97B /* DiabetesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5471C6226E1A9B00F2B97B /* DiabetesAppTests.swift */; };
 		0F5471D2226E1A9B00F2B97B /* DiabetesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5471D1226E1A9B00F2B97B /* DiabetesAppUITests.swift */; };
+		C758D5AC227518990009BD5D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C758D5AB227518990009BD5D /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0F5471CD226E1A9B00F2B97B /* DiabetesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiabetesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5471D1226E1A9B00F2B97B /* DiabetesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetesAppUITests.swift; sourceTree = "<group>"; };
 		0F5471D3226E1A9B00F2B97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C758D5AB227518990009BD5D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0F5471B8226E1A9B00F2B97B /* Assets.xcassets */,
 				0F5471BA226E1A9B00F2B97B /* LaunchScreen.storyboard */,
 				0F5471BD226E1A9B00F2B97B /* Info.plist */,
+				C758D5AB227518990009BD5D /* UIView.swift */,
 			);
 			path = DiabetesApp;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F5471B4226E1A9900F2B97B /* ViewController.swift in Sources */,
+				C758D5AC227518990009BD5D /* UIView.swift in Sources */,
 				0F5471B2226E1A9900F2B97B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
