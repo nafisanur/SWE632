@@ -97,7 +97,6 @@
         <!--Settings-->
         <scene sceneID="yIO-jK-iQm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HLM-4g-sTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="2O2-8c-Qu0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TsD-dY-xcC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -107,6 +106,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="Zmg-pz-3sx"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLM-4g-sTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2564" y="1831"/>
         </scene>
@@ -1075,13 +1075,13 @@
         <image name="blood" width="512" height="512"/>
         <image name="coins" width="512" height="512"/>
         <image name="cutlery" width="512" height="512"/>
-        <image name="fluctuation" width="30" height="30"/>
+        <image name="fluctuation" width="25" height="25"/>
         <image name="glucoseGraph" width="976" height="844"/>
-        <image name="home" width="30" height="30"/>
+        <image name="home" width="25" height="25"/>
         <image name="newActivityGraph" width="1000" height="800"/>
         <image name="pills" width="512" height="512"/>
         <image name="running" width="512" height="512"/>
-        <image name="settings" width="30" height="30"/>
+        <image name="settings" width="25" height="25"/>
         <image name="sugar-blood-level" width="512" height="512"/>
     </resources>
 </document>
