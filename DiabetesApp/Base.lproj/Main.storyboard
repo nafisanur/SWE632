@@ -97,6 +97,7 @@
         <!--Settings-->
         <scene sceneID="yIO-jK-iQm">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLM-4g-sTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="2O2-8c-Qu0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TsD-dY-xcC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -104,13 +105,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sa0-tz-07G"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="Zmg-pz-3sx"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="Zmg-pz-3sx"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HLM-4g-sTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2564" y="1831"/>
         </scene>
-        <!--More-->
+        <!--View Controller-->
         <scene sceneID="HIn-uG-iGq">
             <objects>
                 <viewController id="pb8-YL-AQf" sceneMemberID="viewController">
@@ -120,7 +120,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WoV-yc-KHn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" id="zQm-iV-tHf"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="zQm-iV-tHf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHD-ly-sOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,7 +252,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tXx-Yh-pwA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Reports" id="T2C-y4-Bmo"/>
+                    <tabBarItem key="tabBarItem" title="Reports" image="fluctuation" selectedImage="fluctuation" id="T2C-y4-Bmo"/>
                     <navigationItem key="navigationItem" id="tKc-5F-JSo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WC1-Hv-tfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -581,7 +581,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OGf-u2-Ode"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="BKP-o9-lPg"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home" id="BKP-o9-lPg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5c-uc-m3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -599,8 +599,8 @@
                     <connections>
                         <segue destination="QvO-yD-BRT" kind="relationship" relationship="viewControllers" id="kh7-HE-xxr"/>
                         <segue destination="dSQ-xM-tEa" kind="relationship" relationship="viewControllers" id="csv-Dc-xqH"/>
-                        <segue destination="pb8-YL-AQf" kind="relationship" relationship="viewControllers" id="3Y3-2o-zXd"/>
                         <segue destination="2O2-8c-Qu0" kind="relationship" relationship="viewControllers" id="zeV-qS-kaF"/>
+                        <segue destination="pb8-YL-AQf" kind="relationship" relationship="viewControllers" id="3Y3-2o-zXd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jJ-vu-YBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1075,10 +1075,13 @@
         <image name="blood" width="512" height="512"/>
         <image name="coins" width="512" height="512"/>
         <image name="cutlery" width="512" height="512"/>
+        <image name="fluctuation" width="30" height="30"/>
         <image name="glucoseGraph" width="976" height="844"/>
+        <image name="home" width="30" height="30"/>
         <image name="newActivityGraph" width="1000" height="800"/>
         <image name="pills" width="512" height="512"/>
         <image name="running" width="512" height="512"/>
+        <image name="settings" width="30" height="30"/>
         <image name="sugar-blood-level" width="512" height="512"/>
     </resources>
 </document>
