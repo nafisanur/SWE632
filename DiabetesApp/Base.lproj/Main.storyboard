@@ -267,11 +267,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activityGraph" translatesAutoresizingMaskIntoConstraints="NO" id="yrC-2Q-Rbn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="267"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newActivityGraph" translatesAutoresizingMaskIntoConstraints="NO" id="yrC-2Q-Rbn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="406"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week of 04/28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upJ-Ae-TVm">
-                                <rect key="frame" x="141" y="424" width="132" height="32"/>
+                                <rect key="frame" x="141" y="546" width="132" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="GXn-zX-Ck8"/>
                                 </constraints>
@@ -280,7 +280,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iwn-jd-y5i">
-                                <rect key="frame" x="87" y="477" width="240" height="128"/>
+                                <rect key="frame" x="87" y="599" width="240" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUr-g0-eKO">
                                         <rect key="frame" x="48" y="30" width="148" height="39"/>
@@ -316,7 +316,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkp-WE-J8L">
-                                <rect key="frame" x="102" y="380" width="212" height="36"/>
+                                <rect key="frame" x="102" y="502" width="212" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="HuE-9K-D6R"/>
                                 </constraints>
@@ -327,13 +327,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gkp-WE-J8L" firstAttribute="top" secondItem="yrC-2Q-Rbn" secondAttribute="bottom" constant="25" id="2fB-5S-GI6"/>
+                            <constraint firstItem="gkp-WE-J8L" firstAttribute="top" secondItem="yrC-2Q-Rbn" secondAttribute="bottom" constant="8" id="2fB-5S-GI6"/>
                             <constraint firstItem="yrC-2Q-Rbn" firstAttribute="top" secondItem="irs-SA-UNx" secondAttribute="top" id="77z-sx-rxs"/>
                             <constraint firstItem="upJ-Ae-TVm" firstAttribute="centerX" secondItem="iwn-jd-y5i" secondAttribute="centerX" id="B4C-dW-Aoa"/>
                             <constraint firstItem="upJ-Ae-TVm" firstAttribute="top" secondItem="gkp-WE-J8L" secondAttribute="bottom" constant="8" symbolic="YES" id="EJu-EU-aA3"/>
                             <constraint firstItem="irs-SA-UNx" firstAttribute="trailing" secondItem="gkp-WE-J8L" secondAttribute="trailing" constant="100" id="FFD-ty-BQ8"/>
-                            <constraint firstItem="irs-SA-UNx" firstAttribute="bottom" secondItem="iwn-jd-y5i" secondAttribute="bottom" constant="257" id="K6y-5Y-Hrd"/>
-                            <constraint firstItem="yrC-2Q-Rbn" firstAttribute="bottom" secondItem="irs-SA-UNx" secondAttribute="bottom" constant="-507" id="PGh-2e-Iaq"/>
+                            <constraint firstItem="irs-SA-UNx" firstAttribute="bottom" secondItem="iwn-jd-y5i" secondAttribute="bottom" constant="135" id="K6y-5Y-Hrd"/>
+                            <constraint firstItem="yrC-2Q-Rbn" firstAttribute="bottom" secondItem="irs-SA-UNx" secondAttribute="bottom" constant="-368" id="PGh-2e-Iaq"/>
                             <constraint firstItem="yrC-2Q-Rbn" firstAttribute="centerX" secondItem="upJ-Ae-TVm" secondAttribute="centerX" id="X9P-lY-X0A"/>
                             <constraint firstItem="gkp-WE-J8L" firstAttribute="leading" secondItem="irs-SA-UNx" secondAttribute="leading" constant="102" id="XZT-LQ-pyh"/>
                             <constraint firstItem="yrC-2Q-Rbn" firstAttribute="leading" secondItem="Srf-yW-9Td" secondAttribute="leadingMargin" constant="-20" id="YTF-es-q1s"/>
@@ -416,7 +416,7 @@
                                         <rect key="frame" x="28" y="379" width="42" height="35"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wac-rP-lsN">
-                                        <rect key="frame" x="87" y="386" width="87" height="21"/>
+                                        <rect key="frame" x="87" y="386" width="85" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="rxC-HJ-PO1"/>
                                         </constraints>
@@ -478,8 +478,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130 mg/dL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ut-42-wae">
-                                        <rect key="frame" x="87" y="357" width="86" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="170 mg/dL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ut-42-wae">
+                                        <rect key="frame" x="87" y="357" width="84" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Naj-YV-4c9"/>
                                         </constraints>
@@ -1072,11 +1072,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="activityGraph" width="250.66667175292969" height="150.66667175292969"/>
         <image name="blood" width="512" height="512"/>
         <image name="coins" width="512" height="512"/>
         <image name="cutlery" width="512" height="512"/>
         <image name="glucoseGraph" width="976" height="844"/>
+        <image name="newActivityGraph" width="1000" height="800"/>
         <image name="pills" width="512" height="512"/>
         <image name="running" width="512" height="512"/>
         <image name="sugar-blood-level" width="512" height="512"/>
